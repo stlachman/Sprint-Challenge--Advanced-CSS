@@ -1,1 +1,30 @@
 // Navigation code here
+.top-navigation {
+  background: @nav-bg;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1.4rem 0 1rem;
+  border-bottom: 1px solid @nav-border;
+
+  h1 {
+    font-size: 3.8rem;
+  }
+
+  .nav-items {
+    margin-top: 2rem;
+
+    a {
+      font-size: 1.7rem;
+      text-decoration: none;
+      display: inline-block;
+      margin-right: 26px;
+      color: @nav-font;
+      
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

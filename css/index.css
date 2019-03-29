@@ -186,9 +186,24 @@ p {
   display: inline-block;
   margin-right: 30px;
   color: #454A59;
+  position: relative;
 }
 .top-navigation .nav-items a:last-child {
   margin-right: 0;
+}
+.top-navigation .nav-items a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -6px;
+  height: 3px;
+  width: 0;
+  background: #454A59;
+  transition: 0.26s width cubic-bezier(0, 1.07, 1, 1);
+}
+.top-navigation .nav-items a:hover::after {
+  width: 100%;
 }
 footer {
   color: #22283B;

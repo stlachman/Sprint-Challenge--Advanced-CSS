@@ -26,9 +26,26 @@
       display: inline-block;
       margin-right: 30px;
       color: @nav-font;
+      position: relative;
       
       &:last-child {
         margin-right: 0;
+      }
+
+     &::after {
+          content: '';
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: -6px;
+          height: 3px;
+          width: 0;
+          background: @nav-font;
+          transition: 0.26s width cubic-bezier(0, 1.07, 1, 1);
+      }
+
+      &:hover::after {
+        width: 100%;
       }
     }
   }

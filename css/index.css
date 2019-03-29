@@ -310,3 +310,25 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.recent-articles {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3rem 0;
+  padding: 0 2%;
+}
+.recent-articles article {
+  flex: 0 0 48%;
+  margin: 1% 1% 2%;
+  border: 1px solid #dee2e6;
+  padding: 2rem;
+}
+@media (max-width: 500px) {
+  .recent-articles article {
+    flex: 0 0 100%;
+    margin: 2% 0 0;
+  }
+}
+.recent-articles article h3 {
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
+}

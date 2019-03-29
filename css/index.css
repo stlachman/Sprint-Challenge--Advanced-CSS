@@ -167,19 +167,19 @@ p {
   margin: 0 auto;
   text-align: center;
   padding: 1.4rem 0 1rem;
-  border-bottom: 1px solid #F1F1F1;
+  border-bottom: 2px solid #F1F1F1;
 }
 .top-navigation h1 {
-  font-size: 3.8rem;
+  font-size: 4rem;
 }
 .top-navigation .nav-items {
-  margin-top: 2rem;
+  margin-top: 1.9rem;
 }
 .top-navigation .nav-items a {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   text-decoration: none;
   display: inline-block;
-  margin-right: 26px;
+  margin-right: 30px;
   color: #454A59;
 }
 .top-navigation .nav-items a:last-child {
@@ -200,6 +200,9 @@ footer {
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .intro img {
+  border-radius: 4px;
 }
 .home .space-images {
   display: flex;

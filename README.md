@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Layouts for adaptive designs are hardcoded at each media query width which means that only a certain range of devices will receive a layout that will fit within their viewport without a horizontal scrollbar appearing. A fully responsive layout uses responsive units and media queries to constrain the viewport so that every user will experience a layout that fits within their viewport.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first websites are designed and coded starting at a smaller viewport like that of a phone. So the first styles represent the styles that will be used for the mobile layout and then min-width media queries are added at larger breakpoints (e.g. 600px) to expand the design for larger viewports. Desktop first engineering starts with the desktop layout and then employs max-width media queries to constrain the site to fit within smaller screen sizes.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+This technique sets 1rem equal to 10px which makes conversions faster and less error prone (e.g. 1.6rem = 16px) when building components.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing is a like a superset of CSS that incorporates features found in a programming language, such as variables and functions, by giving us a new syntax that is then compiled to 'vanilla' css which will run on the browser. Preprocessing can make your code more reusable and semantic to the next developer through the use of well named variables for colors and font stacks, as well as mixins that give a user the power to reuse chunks of code on another CSS selector by calling the mixin.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept from preprocessing is variables because it gives me the ability to easily update color values and media queries (through the use of escaping) quickly and with less errors. The concept that gives me the most trouble would be mixins because it can be difficult to know when you should create a mixin or when you are adding undue complexity to your codebase.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
